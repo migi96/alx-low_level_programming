@@ -1,0 +1,13 @@
+#!/bin/bash
+if [ -z "$CFILE" ]; then
+    echo "Error: CFILE is not set."
+    exit 1
+fi
+
+if [ ! -f "$CFILE" ]; then
+    echo "Error: File '$CFILE' does not exist."
+    exit 1
+fi
+
+gcc -E "$CFILE" -o c
+echo "Preprocessed $CFILE and saved to 'c'"
