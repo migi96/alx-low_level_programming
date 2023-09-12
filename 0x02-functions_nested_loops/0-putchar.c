@@ -1,5 +1,7 @@
-#include <unistd.h>
-int _putchar(char c)
+#include "main.h"
+
+int main(void)
 {
-    return write(1, &c, 1);
+    _putchar('H');
+    return (0);
 }
