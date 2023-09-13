@@ -19,7 +19,9 @@ void add_strings(char num1[], char num2[], char result[])
 
 	memset(result, 0, 5000);
 
-	for (i = len1 - 1, j = len2 - 1; i >= 0 || j >= 0 || carry; i--, j--, max_len--)
+	for (i = len1 - 1, j = len2 - 1; 
+	     i >= 0 || j >= 0 || carry; 
+	     i--, j--, max_len--)
 	{
 		int n1 = (i >= 0) ? num1[i] - '0' : 0;
 		int n2 = (j >= 0) ? num2[j] - '0' : 0;
