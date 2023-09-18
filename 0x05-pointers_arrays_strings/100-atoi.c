@@ -36,7 +36,7 @@ int _atoi(char *s)
 				return (INT_MIN);
 			}
 		}
-		else if (started) 
+		else if (started)
 		{
 			break;
 		}
