@@ -2,17 +2,20 @@
 
 /**
  * _strcpy - Copies the string pointed to by src to dest.
- * @dest: Destination string.
- * @src: Source string.
+ * @dest: The destination buffer.
+ * @src: The source string.
  *
- * Return: Pointer to dest.
+ * Return: A pointer to the destination string dest.
  */
-char *_strcpy(char *dest, const char *src)
+char *_strcpy(char *dest, char *src)
 {
-	char *original_dest = dest;
+    int i;
 
-	while ((*dest++ = *src++))
-		;
+    for (i = 0; src[i] != '\0'; i++)
+    {
+        dest[i] = src[i];
+    }
+    dest[i] = '\0';
 
-	return original_dest;
+    return (dest);  // Note the parentheses around dest
 }
