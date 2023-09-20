@@ -4,11 +4,11 @@ char *_strcat(char *dest, char *src)
 {
     char *orig_dest = dest;
 
-    // move dest pointer to its end
+    /* move dest pointer to its end */
     while (*dest)
         dest++;
 
-    // copy src to dest
+    /* copy src to dest */
     while (*src)
     {
         *dest = *src;
@@ -16,7 +16,7 @@ char *_strcat(char *dest, char *src)
         src++;
     }
 
-    *dest = '\0'; // terminate the concatenated string
+    *dest = '\0'; /* terminate the concatenated string */
 
     return orig_dest;
 }
