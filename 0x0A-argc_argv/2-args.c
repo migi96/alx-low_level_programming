@@ -2,18 +2,18 @@
 
 /**
  * main - Entry point
- * @argc: argument
+ * @argc: arguments
  * @argv: array pointing to arguments
  *
  * Return: 0
  */
 int main(int argc, char *argv[])
 {
-	int m;
+	int i;
 
-	for (i = 0; m < argc; m++)
+	for (i = 0; i < argc; i++)
 	{
-		printf("%s\n", argv[m]);
+		printf("%s\n", argv[i]);
 	}
 
 	return (0);
